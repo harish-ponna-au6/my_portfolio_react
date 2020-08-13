@@ -1,0 +1,139 @@
+.Navbar {
+  display: flex;
+  justify-content: center;
+  font-family: "Lemonada";
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  width: 100%;
+}
+
+.Navbar .container {
+  position: relative;
+  min-height: 60px;
+  width: 100%;
+  max-width: 1100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 0 20px;
+}
+
+.Navbar .container .name {
+  font-size: 22px;
+  color: #c50b26;
+}
+.Navbar .container .name .logo {
+  text-align: center;
+  background-color: #c50b26;
+  font-weight: 800;
+  color: #010b26;
+  justify-content: space-between;
+  align-items: center;
+  height: 40px;
+  width: 40px;
+  display: flex;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.nav_links {
+  list-style: none;
+  display: flex;
+  margin-left: auto;
+}
+
+.nav_links li {
+  padding: 5px 10px;
+}
+
+.nav_links li a {
+  text-decoration: none;
+  color: white;
+}
+.nav_links li a:hover {
+  color: #c50b26;
+}
+
+.nav_links li a.download-resume {
+  border: 2px solid #c50b26;
+  padding: 2px 5px;
+  border-radius: 5px;
+}
+.nav_links li a.download-resume:hover {
+  background: #c50b26;
+  color: white;
+  transition-duration: 400ms;
+  transition-delay: 100ms;
+}
+.Navbar.active {
+  background-color: #fff;
+  border-bottom: 2px solid #c50b26;
+}
+
+.Navbar.active .container .name .logo {
+  color: white;
+}
+.Navbar.active ul li a {
+  color: #010b26;
+}
+
+.Navbar.active ul li a:hover {
+  color: #c50b26;
+}
+
+.Navbar.active .container .nav_links li a.download-resume:hover {
+  color: white;
+}
+
+.Navbar.active .container .nav_links li a.active {
+  border-bottom: orange 3px solid;
+}
+
+@media only screen and (max-width: 920px) {
+  .Navbar .container {
+    display: block;
+  }
+  .Navbar .container .name {
+    position: relative;
+    top: 10px;
+  }
+  .Navbar .container .nav_links {
+    display: none;
+    height: 0;
+    overflow: hidden;
+  }
+  .Navbar .container .nav_links.active {
+    height: auto;
+    margin: 10px 0;
+    text-align: center;
+    display: block;
+    background-color: #c50b26;
+  }
+
+  .hamburger {
+    position: absolute;
+    right: 20px;
+    top: 14px;
+    width: 30px;
+    height: 32px;
+    cursor: pointer;
+  }
+
+  .hamburger div {
+    width: 100%;
+    height: 4px;
+    margin: 5px 0;
+    background-color: #c50b26;
+  }
+
+  .hamburger.active div:nth-child(1) {
+    position: relative;
+    left: 10px;
+  }
+  .hamburger.active div:nth-child(3) {
+    position: relative;
+    right: 10px;
+  }
+}

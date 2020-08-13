@@ -1,0 +1,48 @@
+.Hero {
+  background: url("/images/bg_images/hero.jpg");
+  background-size: cover;
+  background-position: right;
+  background-attachment: fixed;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 0 20px;
+}
+.Hero .text {
+  color: white;
+}
+
+.Hero .text h1 {
+  letter-spacing: 3px;
+  font-size: 40px;
+  text-align: center;
+}
+.Hero .text p {
+  text-align: center;
+}
+
+.Hero .social_media {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+.Hero .social_media i {
+  margin: 10px;
+  font-size: 40px;
+  color: #558dd2;
+}
+
+.Hero .social_media a:hover {
+  transform: scale(1.5, 1.5);
+}
+
+@media only screen and (max-width: 930px) {
+  .Hero {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url("/images/bg_images/hero.jpg");
+  }
+}

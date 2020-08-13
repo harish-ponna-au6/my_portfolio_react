@@ -1,0 +1,39 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Lemonada";
+  transition-duration: 400ms;
+  transition-delay: 100ms;
+}
+
+.heading {
+  text-align: center;
+  color: #010b26;
+}
+.content {
+  text-align: justify;
+  color: #010b26dc;
+}
+
+body::-webkit-scrollbar {
+  width: 0;
+  width: 12px;
+}
+
+body::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: #e71433;
+  border-radius: 5px;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  background: #c50b26;
+}
+
+html {
+  scroll-behavior: smooth;
+}

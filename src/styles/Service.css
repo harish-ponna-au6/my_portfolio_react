@@ -1,0 +1,41 @@
+.Service {
+  min-height: calc(100vh - 60px);
+  background: #ecf0f1;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.Service .header {
+  margin-top: 20px;
+  padding: 0 10px;
+}
+.Service .header .content {
+  padding: 0 30px;
+  text-align: center;
+}
+.Service .cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.Service .cards .card {
+  max-width: 300px;
+  margin: 30px 40px 50px 40px;
+}
+.Service .cards .card .icon {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.Service .cards .card .icon i {
+  color: #c50b26;
+  font-size: 80px;
+}
+
+.Service .cards .card .content {
+  text-align: justify;
+}

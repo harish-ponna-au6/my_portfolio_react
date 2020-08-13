@@ -1,0 +1,30 @@
+.Quote {
+  min-height: calc(100vh - 60px);
+  width: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("/images/bg_images/quote.jpg");
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  flex-wrap: wrap;
+  color: white;
+  font-size: 25px;
+}
+.Quote h1 {
+  text-align: center;
+}
+.Quote .footer {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  background-color: #010b26;
+  color: white;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+}

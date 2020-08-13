@@ -1,0 +1,22 @@
+.AboutMe {
+  min-height: calc(100vh - 60px);
+  background-color: #010b26;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.AboutMe .heading {
+  color: #c50b26;
+  margin-bottom: 30px;
+  border-bottom: 4px solid #c50b26;
+  margin-top: 30px;
+}
+.AboutMe .content {
+  color: white;
+  max-width: 700px;
+  padding: 0 30px;
+  margin-bottom: 40px;
+}
