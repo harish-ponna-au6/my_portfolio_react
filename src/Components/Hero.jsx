@@ -6,13 +6,13 @@ import { motion } from "framer-motion";
 import {
   welcomeContentVariants,
   welcomeHeadingVariants,
-  socialMediaVariants
+  socialMediaVariants,
 } from "../variants/HeroVariants";
 
 const Hero = (props) => {
   const {
     heroState: { heading, content, social_media_icons },
-    heroRef
+    heroRef,
   } = props;
   return (
     <div ref={heroRef} className="Hero">
