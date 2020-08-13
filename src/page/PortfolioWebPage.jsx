@@ -8,8 +8,7 @@ import AboutMe from "../Components/AboutMe";
 import Quote from "../Components/Quote";
 import { connect } from "react-redux";
 
-const PortfolioWebPage = (props) => {
-  const { all_projects_length } = props;
+const PortfolioWebPage = () => {
   const heroRef = useRef();
   const serviceRef = useRef();
   const quoteRef = useRef();
@@ -62,8 +61,6 @@ const PortfolioWebPage = (props) => {
     </div>
   );
 };
-const all_projects_length = (state) => ({
-  all_projects_length: state.portfolioState.projects.length
-});
 
-export default connect(all_projects_length, null)(PortfolioWebPage);
+
+export default PortfolioWebPage;
