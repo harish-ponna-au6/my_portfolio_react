@@ -6,7 +6,6 @@ import Skills from "../Components/Skills";
 import Portfolio from "../Components/Portfolio";
 import AboutMe from "../Components/AboutMe";
 import Quote from "../Components/Quote";
-import { connect } from "react-redux";
 
 const PortfolioWebPage = () => {
   const heroRef = useRef();
