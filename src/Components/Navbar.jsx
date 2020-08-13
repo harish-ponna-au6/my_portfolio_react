@@ -12,10 +12,10 @@ const Navbar = (props) => {
       portfolioRef,
       aboutMeRef,
       skillsRef,
-      quoteRef
+      quoteRef,
     },
     history: { push },
-    location: { pathname }
+    location: { pathname },
   } = props;
 
   const [navStatus, setNavStatus] = useState(false);
@@ -40,7 +40,7 @@ const Navbar = (props) => {
         portfolioRef,
         aboutMeRef,
         skillsRef,
-        quoteRef
+        quoteRef,
       ];
       const paths = [
         "/home",
@@ -48,7 +48,7 @@ const Navbar = (props) => {
         "/portfolio",
         "/aboutme",
         "/skills",
-        "/quote"
+        "/quote",
       ];
 
       for (let i = 0; i < all_refs_array.length; i++) {
@@ -68,7 +68,7 @@ const Navbar = (props) => {
     skillsRef,
     portfolioRef,
     aboutMeRef,
-    push
+    push,
   ]);
 
   return (
@@ -78,8 +78,6 @@ const Navbar = (props) => {
       animate="visible"
       className={`Navbar ${navStatus && "active"}`}
     >
-      {console.log(pathname)}
-      {console.log("rendierign")}
       <div className="container">
         <div className="name">
           <motion.div variants={logoVariants} className="logo">
