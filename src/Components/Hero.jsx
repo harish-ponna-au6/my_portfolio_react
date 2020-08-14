@@ -6,13 +6,13 @@ import { motion } from "framer-motion";
 import {
   welcomeContentVariants,
   welcomeHeadingVariants,
-  socialMediaVariants,
+  socialMediaVariants
 } from "../variants/HeroVariants";
 
 const Hero = (props) => {
   const {
     heroState: { heading, content, social_media_icons },
-    heroRef,
+    heroRef
   } = props;
   return (
     <div ref={heroRef} className="Hero">
@@ -39,7 +39,12 @@ const Hero = (props) => {
         className="social_media"
       >
         {social_media_icons.map((icon, index) => (
-          <Link to={icon.to} key={index}>
+          <Link
+            to="/"
+            onClick={() => window.open(icon.to, "_blank")}
+            key={index}
+            target="_blank"
+          >
             <i className={icon.classname}></i>
           </Link>
         ))}

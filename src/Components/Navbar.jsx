@@ -154,11 +154,12 @@ const Navbar = (props) => {
           </li>
           <li>
             <Link
-              onClick={() => setHamburgerStatus(!hamburgerStatus)}
-              to="/resume/HarishPonnaResume.pdf"
+              onClick={() => {
+                setHamburgerStatus(!hamburgerStatus);
+                window.open("/resume/HarishPonnaResume.pdf", "_blank");
+              }}
+              to="/"
               className="download-resume"
-              download
-              target="_blank"
             >
               Download Resume
             </Link>
