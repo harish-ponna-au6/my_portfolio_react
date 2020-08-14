@@ -1,6 +1,6 @@
 .Service {
   min-height: calc(100vh - 60px);
-  background: var(--color2);
+  background: var(--whiteShady);
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -32,7 +32,7 @@
   width: 100%;
 }
 .Service .cards .card .icon i {
-  color: var(--color3);
+  color: var(--primary);
   font-size: 80px;
 }
 

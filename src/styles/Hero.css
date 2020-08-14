@@ -1,7 +1,8 @@
 .Hero {
-  background: url("/images/bg_images/hero.jpg");
+  background: url("/images/bg_images/hero.svg");
+  background-color: var(--bgHeroColor);
   background-size: cover;
-  background-position: right;
+  background-position: center;
   background-attachment: fixed;
   width: 100%;
   min-height: 100vh;
@@ -13,7 +14,7 @@
   padding: 0 20px;
 }
 .Hero .text {
-  color: white;
+  color: var(--white);
 }
 
 .Hero .text h1 {
@@ -33,16 +34,5 @@
 .Hero .social_media i {
   margin: 10px;
   font-size: 40px;
-  color: #558dd2;
-}
-
-.Hero .social_media a:hover {
-  transform: scale(1.5, 1.5);
-}
-
-@media only screen and (max-width: 930px) {
-  .Hero {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-      url("/images/bg_images/hero.jpg");
-  }
+  color: #4bb7e0;
 }

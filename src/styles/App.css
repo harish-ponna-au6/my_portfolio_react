@@ -3,22 +3,19 @@
   margin: 0;
   box-sizing: border-box;
   font-family: "Lemonada";
-  transition-duration: 400ms;
-  transition-delay: 100ms;
 }
 
 .heading {
   text-align: center;
-  color: var(--color5);
+  color: var(--black);
 }
 .content {
   text-align: justify;
-  color: var(--color6);
+  color: var(--blackShady);
 }
 
 body::-webkit-scrollbar {
   width: 0;
-  /* width: 12px; */
 }
 
 body::-webkit-scrollbar-track {
@@ -26,12 +23,12 @@ body::-webkit-scrollbar-track {
 }
 
 body::-webkit-scrollbar-thumb {
-  background: var(--color4);
+  background: var(--primaryShady);
   border-radius: 5px;
 }
 
 body::-webkit-scrollbar-thumb:hover {
-  background: var(--color3);
+  background: var(--primary);
 }
 
 html {

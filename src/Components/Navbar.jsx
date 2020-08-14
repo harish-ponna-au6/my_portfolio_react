@@ -4,6 +4,8 @@ import { useViewportScroll, motion } from "framer-motion";
 import "../styles/Navbar.css";
 import { logoVariants, navVariants } from "../variants/NavbarVariants";
 
+// const bgHero = {;}
+
 const Navbar = (props) => {
   const {
     all_refs: {
@@ -34,6 +36,19 @@ const Navbar = (props) => {
   useEffect(() => {
     scrollYProgress.onChange(() => {
       window.pageYOffset > 70 ? setNavStatus(true) : setNavStatus(false);
+
+      // if (scrollYProgress.prev < scrollYProgress.current) {
+      //   if (
+      //     window.pageYOffset > serviceRef.current.offsetTop - 200 &&
+      //     window.pageYOffset < serviceRef.current.offsetTop - 50
+      //   ) {
+      //     console.log("scrolling");
+      //     window.scrollTo({
+      //       top: serviceRef.current.offsetTop - 60
+      //     });
+      //   }
+      // }
+
       const all_refs_array = [
         heroRef,
         serviceRef,

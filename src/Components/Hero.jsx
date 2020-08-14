@@ -1,8 +1,8 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import "../styles/Hero.css";
 import { connect } from "react-redux";
-import { motion } from "framer-motion";
+import { motion, useViewportScroll } from "framer-motion";
 import {
   welcomeContentVariants,
   welcomeHeadingVariants,
@@ -14,8 +14,28 @@ const Hero = (props) => {
     heroState: { heading, content, social_media_icons },
     heroRef
   } = props;
+  const [bgHerostatus, setBgHeroStatus] = useState(false);
+
+  const { scrollYProgress } = useViewportScroll();
+  useEffect(() => {
+    scrollYProgress.onChange(() => {
+      window.pageYOffset > 150 ? setBgHeroStatus(true) : setBgHeroStatus(false);
+    });
+  }, [scrollYProgress]);
+
   return (
-    <div ref={heroRef} className="Hero">
+    <motion.div
+      ref={heroRef}
+      className="Hero"
+      style={
+        bgHerostatus
+          ? {
+              background:
+                "linear-gradient(107.01deg, #6526A5 -1.2%, #7522A1 44.85%, #EA0882 95.17%)"
+            }
+          : { background: null }
+      }
+    >
       <div className="text">
         <motion.h1
           variants={welcomeHeadingVariants}
@@ -45,11 +65,16 @@ const Hero = (props) => {
             key={index}
             target="_blank"
           >
-            <i className={icon.classname}></i>
+            <motion.i
+              whileHover={{
+                scale: [1, 1.2, 0.4, 1.2]
+              }}
+              className={icon.classname}
+            ></motion.i>
           </Link>
         ))}
       </motion.div>
-    </div>
+    </motion.div>
   );
 };
 

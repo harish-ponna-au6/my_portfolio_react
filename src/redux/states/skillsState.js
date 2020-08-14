@@ -4,6 +4,7 @@ const skillsState = {
     "fab fa-node",
     "fab fa-html5",
     "fab fa-css3",
+    "fab fa-sass",
     "fab fa-bootstrap",
     "fab fa-js-square",
     "fab fa-npm",
