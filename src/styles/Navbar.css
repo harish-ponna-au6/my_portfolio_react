@@ -119,6 +119,7 @@
   .Navbar .container .nav_links li a:hover {
     color: var(--secondary);
   }
+
   .Navbar .container .nav_links.active {
     height: auto;
     margin: 10px 0;
@@ -126,7 +127,9 @@
     display: block;
     background-color: var(--primary);
   }
-
+  .Navbar .container .nav_links.active li a.download-resume:hover {
+    color: var(--white);
+  }
   .hamburger {
     position: absolute;
     right: 20px;
