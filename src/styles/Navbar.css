@@ -111,6 +111,9 @@
     display: block;
     background-color: var(--color3);
   }
+ .Navbar .container .nav_links li a:hover {
+  color: var(--color1);
+}
 
   .hamburger {
     position: absolute;
