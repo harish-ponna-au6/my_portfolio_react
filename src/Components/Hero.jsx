@@ -39,7 +39,7 @@ const Hero = (props) => {
         className="social_media"
       >
         {social_media_icons.map((icon, index) => (
-          <Link to="#" key={index}>
+          <Link to={icon.to} key={index}>
             <i className={icon.classname}></i>
           </Link>
         ))}
