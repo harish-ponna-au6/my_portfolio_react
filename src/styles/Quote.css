@@ -20,8 +20,8 @@
   position: absolute;
   width: 100%;
   bottom: 0;
-  background-color: #010b26;
-  color: white;
+  background-color: var(--color5);
+  color: var(--color1);
   height: 60px;
   display: flex;
   justify-content: center;

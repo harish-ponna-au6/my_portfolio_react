@@ -22,13 +22,13 @@
 
 .Navbar .container .name {
   font-size: 22px;
-  color: #c50b26;
+  color: var(--color3);
 }
 .Navbar .container .name .logo {
   text-align: center;
-  background-color: #c50b26;
+  background-color: var(--color3);
   font-weight: 800;
-  color: #010b26;
+  color: var(--color5);
   justify-content: space-between;
   align-items: center;
   height: 40px;
@@ -50,45 +50,45 @@
 
 .nav_links li a {
   text-decoration: none;
-  color: white;
+  color: var(--color1);
 }
 .nav_links li a:hover {
-  color: #c50b26;
+  color: var(--color3);
 }
 
 .nav_links li a.download-resume {
-  border: 2px solid #c50b26;
+  border: 2px solid var(--color3);
   padding: 2px 5px;
   border-radius: 5px;
 }
 .nav_links li a.download-resume:hover {
-  background: #c50b26;
-  color: white;
+  background: var(--color3);
+  color: var(--color1);
   transition-duration: 400ms;
   transition-delay: 100ms;
 }
 .Navbar.active {
-  background-color: #fff;
-  border-bottom: 2px solid #c50b26;
+  background-color: var(--color1);
+  border-bottom: 2px solid var(--color3);
 }
 
 .Navbar.active .container .name .logo {
-  color: white;
+  color: var(--color1);
 }
 .Navbar.active ul li a {
-  color: #010b26;
+  color: var(--color5);
 }
 
 .Navbar.active ul li a:hover {
-  color: #c50b26;
+  color: var(--color3);
 }
 
 .Navbar.active .container .nav_links li a.download-resume:hover {
-  color: white;
+  color: var(--color1);
 }
 
 .Navbar.active .container .nav_links li a.active {
-  border-bottom: orange 3px solid;
+  border-bottom: orange 4px solid;
 }
 
 @media only screen and (max-width: 920px) {
@@ -109,7 +109,7 @@
     margin: 10px 0;
     text-align: center;
     display: block;
-    background-color: #c50b26;
+    background-color: var(--color3);
   }
 
   .hamburger {
@@ -125,7 +125,7 @@
     width: 100%;
     height: 4px;
     margin: 5px 0;
-    background-color: #c50b26;
+    background-color: var(--color3);
   }
 
   .hamburger.active div:nth-child(1) {

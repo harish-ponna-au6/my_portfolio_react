@@ -9,11 +9,11 @@
 
 .heading {
   text-align: center;
-  color: #010b26;
+  color: var(--color5);
 }
 .content {
   text-align: justify;
-  color: #010b26dc;
+  color: var(--color6);
 }
 
 body::-webkit-scrollbar {
@@ -26,12 +26,12 @@ body::-webkit-scrollbar-track {
 }
 
 body::-webkit-scrollbar-thumb {
-  background: #e71433;
+  background: var(--color4);
   border-radius: 5px;
 }
 
 body::-webkit-scrollbar-thumb:hover {
-  background: #c50b26;
+  background: var(--color3);
 }
 
 html {

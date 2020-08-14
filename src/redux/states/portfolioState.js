@@ -17,8 +17,8 @@ const portfolioState = {
         "Json Web Token",
         "Cloudinary"
       ],
-      viewSite: "#",
-      viewCode: "#"
+      viewSite: "https://seasonal-jobs.netlify.app/",
+      viewCode: "https://github.com/harish-ponna-au6/Seasonal-Jobs-FrontEnd/"
     },
     {
       imagePath: "/images/project_images/sticky_notebook.png",
@@ -35,8 +35,8 @@ const portfolioState = {
         "Json Web Token",
         "Cloudinary"
       ],
-      viewSite: "#",
-      viewCode: "#"
+      viewSite: "https://sticky-notebook.herokuapp.com/",
+      viewCode: "https://github.com/harish-ponna-au6/sticky-notebook"
     },
     {
       imagePath: "/images/project_images/gity_finder.png",
@@ -51,8 +51,8 @@ const portfolioState = {
         " Redux-Thunk",
         "Axios"
       ],
-      viewSite: "#",
-      viewCode: "#"
+      viewSite: "https://gity-finder.netlify.app/",
+      viewCode: "https://github.com/harish-ponna-au6/gity-finder/"
     },
     {
       imagePath: "/images/project_images/shoezz.png",
@@ -67,8 +67,8 @@ const portfolioState = {
         "Mongoose",
         "BcryptJs"
       ],
-      viewSite: "#",
-      viewCode: "#"
+      viewSite: "https://shoe-shopping-cart.herokuapp.com/",
+      viewCode: "https://github.com/harish-ponna-au6/shoe-shopping"
     },
     {
       imagePath: "/images/project_images/url_shortener.png",
@@ -85,17 +85,29 @@ const portfolioState = {
         "Mongoose",
         "BcryptJs"
       ],
-      viewSite: "#",
-      viewCode: "#"
+      viewSite: "https://shorten-your-url.herokuapp.com/",
+      viewCode: "https://github.com/harish-ponna-au6/URL-Shortener"
     },
+
+    {
+      imagePath: "/images/project_images/countries_details.png",
+      heading: "Countries Details",
+      content:
+        "This is a simple web page built by using HTML5, CSS3 and JavaScript. It is used  for searching countries and their details by continent category or by country names. This app was built during the initial stages of learning JavaScript.",
+      technologies: ["HTML5", "CSS3", "JavaScript"],
+      viewSite: "https://countries-view.netlify.app/",
+      viewCode: "https://github.com/harish-ponna-au6/netlify-countries/"
+    },
+
     {
       imagePath: "/images/project_images/currency_converter.png",
       heading: "Currency Converter",
       content:
         "This is a simple web page built by using HTML5, CSS3 and JavaScript. It is used to compare the currency value with other countries' currency. This app was built during the initial stages of learning JavaScript.",
       technologies: ["HTML5", "CSS3", "JavaScript"],
-      viewSite: "#",
-      viewCode: "#"
+      viewSite: "https://currency-converter-01v.netlify.app/",
+      viewCode:
+        "https://github.com/harish-ponna-au6/netlify-currency-converter/"
     }
   ]
 };

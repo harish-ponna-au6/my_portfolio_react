@@ -12,10 +12,10 @@ const Navbar = (props) => {
       portfolioRef,
       aboutMeRef,
       skillsRef,
-      quoteRef,
+      quoteRef
     },
     history: { push },
-    location: { pathname },
+    location: { pathname }
   } = props;
 
   const [navStatus, setNavStatus] = useState(false);
@@ -40,7 +40,7 @@ const Navbar = (props) => {
         portfolioRef,
         aboutMeRef,
         skillsRef,
-        quoteRef,
+        quoteRef
       ];
       const paths = [
         "/home",
@@ -48,7 +48,7 @@ const Navbar = (props) => {
         "/portfolio",
         "/aboutme",
         "/skills",
-        "/quote",
+        "/quote"
       ];
 
       for (let i = 0; i < all_refs_array.length; i++) {
@@ -68,7 +68,7 @@ const Navbar = (props) => {
     skillsRef,
     portfolioRef,
     aboutMeRef,
-    push,
+    push
   ]);
 
   return (
@@ -80,7 +80,13 @@ const Navbar = (props) => {
     >
       <div className="container">
         <div className="name">
-          <motion.div variants={logoVariants} className="logo">
+          <motion.div
+            variants={logoVariants}
+            drag
+            dragConstraints={{ top: 0, bottom: 0, left: 0, right: 0 }}
+            dragElastic={1}
+            className="logo"
+          >
             HP
           </motion.div>
           Harish Ponna
@@ -149,21 +155,23 @@ const Navbar = (props) => {
           <li>
             <Link
               onClick={() => setHamburgerStatus(!hamburgerStatus)}
-              to="/"
+              to="/resume/HarishPonnaResume.pdf"
               className="download-resume"
+              download
+              target="_blank"
             >
               Download Resume
             </Link>
           </li>
         </ul>
-        <div
+        <motion.div
           onClick={() => setHamburgerStatus(!hamburgerStatus)}
           className={`hamburger ${hamburgerStatus && "active"}`}
         >
           <div></div>
           <div></div>
           <div></div>
-        </div>
+        </motion.div>
       </div>
     </motion.nav>
   );
