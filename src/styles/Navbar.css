@@ -104,6 +104,12 @@
     height: 0;
     overflow: hidden;
   }
+  .Navbar .container .nav_links li a {
+    color: var(--color1);
+  }
+  .Navbar .container .nav_links li a:hover {
+    color: var(--color6);
+  }
   .Navbar .container .nav_links.active {
     height: auto;
     margin: 10px 0;
@@ -111,9 +117,6 @@
     display: block;
     background-color: var(--color3);
   }
- .Navbar .container .nav_links li a:hover {
-  color: var(--color1);
-}
 
   .hamburger {
     position: absolute;
