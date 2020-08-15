@@ -108,6 +108,8 @@
     display: none;
     height: 0;
     overflow: hidden;
+    position: relative;
+    left: 100vw;
   }
   .Navbar.active .container .nav_links li a.active {
     color: var(--secondary);
@@ -123,9 +125,15 @@
   .Navbar .container .nav_links.active {
     height: auto;
     margin: 10px 0;
+    padding: 50px 0;
     text-align: center;
-    display: block;
+    min-height: calc(100vh - 65px);
     background-color: var(--primary);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    font-size: 20px;
+    left: 0vw;
   }
   .Navbar .container .nav_links.active li a.download-resume:hover {
     color: var(--white);
