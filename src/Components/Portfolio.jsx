@@ -1,6 +1,7 @@
 import React from "react";
 import { connect } from "react-redux";
 import "../styles/Portfolio.css";
+import { Link } from "react-router-dom";
 
 const Portfolio = (props) => {
   const {
@@ -31,12 +32,20 @@ const Portfolio = (props) => {
                 ))}
               </div>
               <div className="more">
-                <a href={project.viewSite} className="portfolioProjectMore">
+                <Link
+                  to="/"
+                  onClick={() => window.open(project.viewSite)}
+                  className="portfolioProjectMore"
+                >
                   View Site
-                </a>
-                <a href={project.viewCode} className="portfolioProjectMore">
+                </Link>
+                <Link
+                  to="/"
+                  onClick={() => window.open(project.viewCode)}
+                  className="portfolioProjectMore"
+                >
                   View Code
-                </a>
+                </Link>
               </div>
             </div>
           </div>
