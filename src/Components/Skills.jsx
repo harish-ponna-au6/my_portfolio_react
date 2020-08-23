@@ -27,13 +27,13 @@ const Skills = (props) => {
         <div className="cards ">
           {cards.map((card, index) => (
             <div className="card skillsCard" key={index}>
-              <motion.i
+              <i
                 whileHover={{
                   rotateZ: [0, 10, -10, 10, -10, 0],
                   transition: { duration: 1 }
                 }}
                 className={`${card.icon} skillsCardIcon`}
-              ></motion.i>
+              ></i>
               <h3 className="heading skillsCardHeading">{card.heading}</h3>
               <div className="skill_list ">
                 {card.skill_list.map((skill, index) => (
