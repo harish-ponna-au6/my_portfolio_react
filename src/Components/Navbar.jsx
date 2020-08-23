@@ -66,8 +66,6 @@ const Navbar = (props) => {
       animate="visible"
       className={`Navbar ${navStatus && "active"}`}
     >
-      {console.log("nav rendering")}
-
       <div className="container">
         <div className="name">
           <motion.div
@@ -128,7 +126,13 @@ const Navbar = (props) => {
             </Link>
           </li>
           <li>
-            <Link onClick={() => {window.open("/resume/HarishPonnaResume.pdf");}} download to="/" className="download-resume">
+            <Link
+              onClick={() => {
+                window.open("/resume/HarishPonnaResume.pdf");
+              }}
+              to="/"
+              className="download-resume"
+            >
               Download Resume
             </Link>
           </li>

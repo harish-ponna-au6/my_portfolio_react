@@ -35,4 +35,8 @@
   margin: 10px;
   font-size: 40px;
   color: #4bb7e0;
+  transition-duration: 400ms;
+}
+.Hero .social_media i:hover {
+  transform: scale(1.2) !important;
 }

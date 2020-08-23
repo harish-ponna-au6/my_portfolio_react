@@ -9,7 +9,6 @@ const Service = (props) => {
   } = props;
   return (
     <div ref={serviceRef} className="Service">
-      {console.log("service rendering")}
       <div className="header">
         <h2 className="heading serviceHeading">{heading}</h2>
         <p className="content serviceContent">{content}</p>

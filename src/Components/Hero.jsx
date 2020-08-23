@@ -35,7 +35,6 @@ const Hero = (props) => {
           : { background: null }
       }
     >
-      {console.log("hero rendering")}
       <div className="text">
         <motion.h1
           variants={welcomeHeadingVariants}
@@ -60,12 +59,7 @@ const Hero = (props) => {
             key={index}
             target="_blank"
           >
-            <motion.i
-              whileHover={{
-                scale: [1, 1.2, 0.4, 1.2]
-              }}
-              className={`${icon.classname} heroIcons`}
-            ></motion.i>
+            <i className={`${icon.classname} heroIcons`}></i>
           </Link>
         ))}
       </div>

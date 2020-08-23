@@ -32,6 +32,11 @@
     rgba(255, 255, 255, 0.25)
   );
   border-radius: 5px;
+  transition-duration: 400ms;
+}
+
+.Skills .all_icons i:hover {
+  transform: scale(0.8) !important;
 }
 
 .Skills h2 {
