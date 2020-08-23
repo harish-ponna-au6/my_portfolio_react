@@ -28,19 +28,4 @@ const welcomeContentVariants = {
   }
 };
 
-const socialMediaVariants = {
-  hidden: {
-    opacity: 0
-  },
-  visible: {
-    opacity: 1,
-    transition: {
-      opacity: { duration: 0.2 },
-      type: "spring",
-      stiffness: 100,
-      delay: 2
-    }
-  }
-};
-
-export { welcomeHeadingVariants, welcomeContentVariants, socialMediaVariants };
+export { welcomeHeadingVariants, welcomeContentVariants };

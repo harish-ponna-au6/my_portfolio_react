@@ -10,7 +10,7 @@ const Quote = (props) => {
   } = props;
   return (
     <div ref={quoteRef} className="Quote">
-      <h1>{q1}</h1>
+      <h1 className="quoteQ1">{q1}</h1>
       <Typical
         steps={["Work", 1000, q2, 1000, q3, 1000, q4, 1000]}
         loop={Infinity}

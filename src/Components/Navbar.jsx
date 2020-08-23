@@ -1,90 +1,63 @@
 import React, { useEffect, useState } from "react";
-import { Link, withRouter } from "react-router-dom";
-import { useViewportScroll, motion } from "framer-motion";
+import { motion } from "framer-motion";
 import "../styles/Navbar.css";
 import { logoVariants, navVariants } from "../variants/NavbarVariants";
-
-// const bgHero = {;}
+import { Link } from "react-router-dom";
 
 const Navbar = (props) => {
   const {
-    all_refs: {
-      heroRef,
-      serviceRef,
-      portfolioRef,
-      aboutMeRef,
-      skillsRef,
-      quoteRef
-    },
-    history: { push },
-    location: { pathname }
+    all_refs: { heroRef, serviceRef, portfolioRef, aboutMeRef, skillsRef }
   } = props;
-
+  const [activeLink, setActiveLink] = useState("home");
   const [navStatus, setNavStatus] = useState(false);
-  const [activeLink, setActiveLink] = useState("/home");
   const [hamburgerStatus, setHamburgerStatus] = useState(false);
 
-  useEffect(() => {
-    setActiveLink(pathname);
-  }, [pathname]);
-
-  const scrolling = (refElement) => {
-    return window.scrollTo({ top: refElement.current.offsetTop - 60 });
+  const handleOnClick = (ref, link) => {
+    setActiveLink(link);
+    setHamburgerStatus(false);
+    window.scrollTo({ top: ref.current.offsetTop - 60 });
   };
 
-  const { scrollYProgress } = useViewportScroll();
   useEffect(() => {
-    scrollYProgress.onChange(() => {
-      window.pageYOffset > 70 ? setNavStatus(true) : setNavStatus(false);
-
-      // if (scrollYProgress.prev < scrollYProgress.current) {
-      //   if (
-      //     window.pageYOffset > serviceRef.current.offsetTop - 200 &&
-      //     window.pageYOffset < serviceRef.current.offsetTop - 50
-      //   ) {
-      //     console.log("scrolling");
-      //     window.scrollTo({
-      //       top: serviceRef.current.offsetTop - 60
-      //     });
-      //   }
-      // }
-
-      const all_refs_array = [
-        heroRef,
-        serviceRef,
-        portfolioRef,
-        aboutMeRef,
-        skillsRef,
-        quoteRef
-      ];
-      const paths = [
-        "/home",
-        "/service",
-        "/portfolio",
-        "/aboutme",
-        "/skills",
-        "/quote"
-      ];
-
-      for (let i = 0; i < all_refs_array.length; i++) {
-        if (
-          window.pageYOffset >= all_refs_array[i].current.offsetTop - 70 &&
-          window.pageYOffset <= all_refs_array[i].current.offsetTop + 70
-        ) {
-          push(paths[i]);
-        }
+    const scroll = window.addEventListener("scroll", (e) => {
+      const scrollY = window.pageYOffset;
+      scrollY > 70 ? setNavStatus(true) : setNavStatus(false);
+      if (
+        scrollY >= heroRef.current.offsetTop &&
+        scrollY < heroRef.current.offsetHeight - 60
+      ) {
+        setActiveLink("hero");
+      } else if (
+        scrollY >= serviceRef.current.offsetTop - 60 &&
+        scrollY <
+          serviceRef.current.offsetHeight + serviceRef.current.offsetTop - 60
+      ) {
+        setActiveLink("service");
+      } else if (
+        scrollY >= skillsRef.current.offsetTop - 60 &&
+        scrollY <
+          skillsRef.current.offsetHeight + skillsRef.current.offsetTop - 60
+      ) {
+        setActiveLink("skills");
+      } else if (
+        scrollY >= portfolioRef.current.offsetTop - 60 &&
+        scrollY <
+          portfolioRef.current.offsetHeight +
+            portfolioRef.current.offsetTop -
+            60
+      ) {
+        setActiveLink("portfolio");
+      } else if (
+        scrollY >= aboutMeRef.current.offsetTop - 60 &&
+        scrollY <
+          aboutMeRef.current.offsetHeight + aboutMeRef.current.offsetTop - 60
+      ) {
+        setActiveLink("aboutMe");
       }
     });
-  }, [
-    scrollYProgress,
-    heroRef,
-    serviceRef,
-    quoteRef,
-    skillsRef,
-    portfolioRef,
-    aboutMeRef,
-    push
-  ]);
+
+    return window.removeEventListener("scroll", scroll);
+  });
 
   return (
     <motion.nav
@@ -93,6 +66,8 @@ const Navbar = (props) => {
       animate="visible"
       className={`Navbar ${navStatus && "active"}`}
     >
+      {console.log("nav rendering")}
+
       <div className="container">
         <div className="name">
           <motion.div
@@ -109,73 +84,51 @@ const Navbar = (props) => {
         <ul className={`nav_links ${hamburgerStatus && "active"}`}>
           <li>
             <Link
-              className={`${activeLink === "/home" && "active"}`}
-              onClick={() => {
-                setHamburgerStatus(!hamburgerStatus);
-                scrolling(heroRef);
-              }}
-              to="/home"
+              className={`${activeLink === "hero" && "active"}`}
+              onClick={() => handleOnClick(heroRef, "hero")}
+              to="/"
             >
               Home
             </Link>
           </li>
           <li>
             <Link
-              className={`${activeLink === "/service" && "active"}`}
-              onClick={() => {
-                setHamburgerStatus(!hamburgerStatus);
-                scrolling(serviceRef);
-              }}
-              to="/service"
+              className={`${activeLink === "service" && "active"}`}
+              onClick={() => handleOnClick(serviceRef, "sevice")}
+              to="/"
             >
               Service
             </Link>
           </li>
           <li>
             <Link
-              className={`${activeLink === "/skills" && "active"}`}
-              onClick={() => {
-                setHamburgerStatus(!hamburgerStatus);
-                scrolling(skillsRef);
-              }}
-              to="/skills"
+              className={`${activeLink === "skills" && "active"}`}
+              onClick={() => handleOnClick(skillsRef, "skills")}
+              to="/"
             >
               Skills
             </Link>
           </li>
           <li>
             <Link
-              className={`${activeLink === "/portfolio" && "active"}`}
-              onClick={() => {
-                setHamburgerStatus(!hamburgerStatus);
-                scrolling(portfolioRef);
-              }}
-              to="/portfolio"
+              className={`${activeLink === "portfolio" && "active"}`}
+              onClick={() => handleOnClick(portfolioRef, "portfolio")}
+              to="/"
             >
               Portfolio
             </Link>
           </li>
           <li>
             <Link
-              className={`${activeLink === "/aboutme" && "active"}`}
-              onClick={() => {
-                setHamburgerStatus(!hamburgerStatus);
-                scrolling(aboutMeRef);
-              }}
-              to="/aboutme"
+              className={`${activeLink === "aboutMe" && "active"}`}
+              onClick={() => handleOnClick(aboutMeRef, "about")}
+              to="/"
             >
               About Me
             </Link>
           </li>
           <li>
-            <Link
-              onClick={() => {
-                setHamburgerStatus(!hamburgerStatus);
-                window.open("/resume/HarishPonnaResume.pdf", "_blank");
-              }}
-              to="/"
-              className="download-resume"
-            >
+            <Link onClick={() => {}} to="/" className="download-resume">
               Download Resume
             </Link>
           </li>
@@ -193,4 +146,4 @@ const Navbar = (props) => {
   );
 };
 
-export default withRouter(Navbar);
+export default Navbar;

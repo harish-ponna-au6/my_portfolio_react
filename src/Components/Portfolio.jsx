@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import { connect } from "react-redux";
 import "../styles/Portfolio.css";
 
@@ -12,22 +11,32 @@ const Portfolio = (props) => {
   return (
     <div ref={portfolioRef} className="Portfolio">
       {projects.map((project, index) => (
-        <div className="project" key={index} ref={projectRefs[index]}>
-          <div className="image">
+        <div className="project " key={index} ref={projectRefs[index]}>
+          <div className="image portfolioProjectImage">
             <img src={project.imagePath} alt={project.heading} />
           </div>
           <div className="description">
             <div className="matter">
-              <h2 className="heading">{project.heading}</h2>
-              <p className="content">{project.content}</p>
+              <h2 className="heading portfolioProjectHeading">
+                {project.heading}
+              </h2>
+              <p className="content portfolioProjectContent">
+                {project.content}
+              </p>
               <div className="technologies">
                 {project.technologies.map((technology, index) => (
-                  <div key={index}>{technology}</div>
+                  <div key={index} className="portfolioProjectTech">
+                    {technology}
+                  </div>
                 ))}
               </div>
               <div className="more">
-                <Link to={project.viewSite}>View Site</Link>
-                <Link to={project.viewCode}>View Code</Link>
+                <a href={project.viewSite} className="portfolioProjectMore">
+                  View Site
+                </a>
+                <a href={project.viewCode} className="portfolioProjectMore">
+                  View Code
+                </a>
               </div>
             </div>
           </div>

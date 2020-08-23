@@ -11,19 +11,21 @@ const Skills = (props) => {
       <div ref={skillsRef} className="Skills">
         <div className="all_icons">
           {all_icons.map((icon, index) => (
-            <i className={icon} key={index}></i>
+            <i className={`${icon} skillsAllIcons`} key={index}></i>
           ))}
         </div>
 
-        <h2 className="heading">Skills</h2>
-        <div className="cards">
+        <h2 className="heading skillsHeading">Skills</h2>
+        <div className="cards ">
           {cards.map((card, index) => (
-            <div className="card" key={index}>
-              <i className={card.icon}></i>
-              <h3 className="heading">{card.heading}</h3>
-              <div className="skill_list">
+            <div className="card skillsCard" key={index}>
+              <i className={`${card.icon} skillsCardIcon`}></i>
+              <h3 className="heading skillsCardHeading">{card.heading}</h3>
+              <div className="skill_list ">
                 {card.skill_list.map((skill, index) => (
-                  <div key={index}>{skill}</div>
+                  <div key={index} className="skillsCardSkillList">
+                    {skill}
+                  </div>
                 ))}
               </div>
             </div>

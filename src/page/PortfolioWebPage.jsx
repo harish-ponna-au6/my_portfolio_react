@@ -1,4 +1,5 @@
 import React, { useRef } from "react";
+import withScrollReveal from "react-scrollreveal";
 import Navbar from "../Components/Navbar";
 import Hero from "../Components/Hero";
 import Service from "../Components/Service";
@@ -7,7 +8,16 @@ import Portfolio from "../Components/Portfolio";
 import AboutMe from "../Components/AboutMe";
 import Quote from "../Components/Quote";
 
-const PortfolioWebPage = () => {
+import {
+  srHero,
+  srService,
+  srSkills,
+  srPortfolio,
+  srAboutMe,
+  srQuote
+} from "./scrollRevealConfig";
+
+const PortfolioWebPage = ({ animationContainerReference }) => {
   const heroRef = useRef();
   const serviceRef = useRef();
   const quoteRef = useRef();
@@ -22,7 +32,7 @@ const PortfolioWebPage = () => {
   const shortener = useRef();
 
   return (
-    <div className="PortfolioWebPage">
+    <div ref={animationContainerReference} className="PortfolioWebPage">
       <Navbar
         all_refs={{
           heroRef,
@@ -61,4 +71,11 @@ const PortfolioWebPage = () => {
   );
 };
 
-export default PortfolioWebPage;
+export default withScrollReveal([
+  ...srHero,
+  ...srService,
+  ...srSkills,
+  ...srPortfolio,
+  ...srAboutMe,
+  ...srQuote
+])(PortfolioWebPage);

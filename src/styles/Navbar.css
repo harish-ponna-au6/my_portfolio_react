@@ -51,6 +51,8 @@
 .nav_links li a {
   text-decoration: none;
   color: var(--white);
+  transition-delay: 400ms;
+  transition-duration: 480ms;
 }
 .nav_links li a:hover {
   color: var(--primary);

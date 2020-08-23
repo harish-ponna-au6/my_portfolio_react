@@ -4,12 +4,13 @@ import "../styles/AboutMe.css";
 
 const AboutMe = (props) => {
   const {
-    aboutMeState: { heading, content },aboutMeRef
+    aboutMeState: { heading, content },
+    aboutMeRef
   } = props;
   return (
     <div ref={aboutMeRef} className="AboutMe">
-      <h2 className="heading">{heading}</h2>
-      <p className="content">{content}</p>
+      <h2 className="heading aboutMeHeading">{heading}</h2>
+      <p className="content aboutMeContent">{content}</p>
     </div>
   );
 };

@@ -5,8 +5,7 @@ import { connect } from "react-redux";
 import { motion, useViewportScroll } from "framer-motion";
 import {
   welcomeContentVariants,
-  welcomeHeadingVariants,
-  socialMediaVariants
+  welcomeHeadingVariants
 } from "../variants/HeroVariants";
 
 const Hero = (props) => {
@@ -36,6 +35,7 @@ const Hero = (props) => {
           : { background: null }
       }
     >
+      {console.log("hero rendering")}
       <div className="text">
         <motion.h1
           variants={welcomeHeadingVariants}
@@ -52,12 +52,7 @@ const Hero = (props) => {
           {content}
         </motion.p>
       </div>
-      <motion.div
-        variants={socialMediaVariants}
-        initial="hidden"
-        animate="visible"
-        className="social_media"
-      >
+      <motion.div className="social_media">
         {social_media_icons.map((icon, index) => (
           <Link
             to="/"
@@ -69,7 +64,7 @@ const Hero = (props) => {
               whileHover={{
                 scale: [1, 1.2, 0.4, 1.2]
               }}
-              className={icon.classname}
+              className={`${icon.classname} heroIcons`}
             ></motion.i>
           </Link>
         ))}

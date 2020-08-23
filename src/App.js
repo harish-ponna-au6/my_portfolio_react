@@ -1,7 +1,5 @@
 import React from "react";
 import PortfolioWebPage from "./page/PortfolioWebPage";
-import { Route } from "react-router-dom";
-
 import "./styles/App.css";
 
 const App = () => {
@@ -30,7 +28,7 @@ const App = () => {
       }}
       className="App"
     >
-      <Route path="/" component={PortfolioWebPage} />
+      <PortfolioWebPage />
     </div>
   );
 };
