@@ -15,7 +15,7 @@ const Skills = (props) => {
             <motion.i
               whileHover={{
                 scale: [1, 0.7],
-                transition: { delay: 0, duration: 0 }
+                transition: { duration: 0.5 }
               }}
               className={`${icon} skillsAllIcons`}
               key={index}
