@@ -52,7 +52,7 @@ const Hero = (props) => {
           {content}
         </motion.p>
       </div>
-      <motion.div className="social_media">
+      <div className="social_media">
         {social_media_icons.map((icon, index) => (
           <Link
             to="/"
@@ -68,7 +68,7 @@ const Hero = (props) => {
             ></motion.i>
           </Link>
         ))}
-      </motion.div>
+      </div>
     </motion.div>
   );
 };
