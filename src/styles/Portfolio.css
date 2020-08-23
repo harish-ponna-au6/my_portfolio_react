@@ -50,6 +50,8 @@
   margin: 10px;
   color: var(--primary);
   text-decoration: none;
+  transition-delay: 200ms;
+  transition-duration: 480ms;
 }
 .Portfolio .project .description .more a:hover {
   background-color: var(--primary);

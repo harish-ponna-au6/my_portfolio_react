@@ -18,8 +18,8 @@ const srService = [
       reset: true,
       origin: "top",
       distance: "80px",
-      delay: 200,
-      duration: 2000
+      delay: 100,
+      duration: 1000
     }
   },
   {
@@ -28,8 +28,8 @@ const srService = [
       reset: true,
       origin: "top",
       distance: "80px",
-      delay: 400,
-      duration: 2000
+      delay: 300,
+      duration: 1000
     }
   },
   {
@@ -38,8 +38,8 @@ const srService = [
       reset: true,
       origin: "top",
       distance: "80px",
-      delay: 200,
-      duration: 2000,
+      delay: 100,
+      duration: 1000,
       interval: 200
     }
   },
@@ -49,8 +49,8 @@ const srService = [
       reset: true,
       origin: "top",
       distance: "80px",
-      delay: 200,
-      duration: 2000,
+      delay: 100,
+      duration: 1000,
       interval: 200
     }
   },
@@ -60,8 +60,8 @@ const srService = [
       reset: true,
       origin: "top",
       distance: "80px",
-      delay: 300,
-      duration: 2000,
+      delay: 100,
+      duration: 1000,
       interval: 200
     }
   },
@@ -71,8 +71,8 @@ const srService = [
       reset: true,
       origin: "top",
       distance: "80px",
-      delay: 500,
-      duration: 2000,
+      delay: 300,
+      duration: 1000,
       interval: 200
     }
   }
@@ -85,8 +85,8 @@ const srSkills = [
       reset: true,
       origin: "top",
       distance: "80px",
-      delay: 200,
-      duration: 2000,
+      delay: 100,
+      duration: 1000,
       interval: 100
     }
   },
@@ -96,9 +96,8 @@ const srSkills = [
       reset: true,
       origin: "top",
       distance: "80px",
-      delay: 300,
-      duration: 2000,
-      interval: 200
+      delay: 200,
+      duration: 1000
     }
   },
   {
@@ -107,8 +106,8 @@ const srSkills = [
       reset: true,
       origin: "top",
       distance: "80px",
-      delay: 400,
-      duration: 2000,
+      delay: 100,
+      duration: 1000,
       interval: 200
     }
   },
@@ -118,8 +117,8 @@ const srSkills = [
       reset: true,
       origin: "top",
       distance: "80px",
-      delay: 400,
-      duration: 2000,
+      delay: 100,
+      duration: 1000,
       interval: 200
     }
   },
@@ -129,8 +128,8 @@ const srSkills = [
       reset: true,
       origin: "top",
       distance: "80px",
-      delay: 500,
-      duration: 2000,
+      delay: 200,
+      duration: 1000,
       interval: 200
     }
   },
@@ -140,8 +139,8 @@ const srSkills = [
       reset: true,
       origin: "top",
       distance: "80px",
-      delay: 600,
-      duration: 2000,
+      delay: 400,
+      duration: 1000,
       interval: 50
     }
   }
@@ -154,8 +153,8 @@ const srPortfolio = [
       reset: true,
       origin: "top",
       distance: "80px",
-      delay: 200,
-      duration: 2000
+      delay: 100,
+      duration: 1000
     }
   },
   {
@@ -164,8 +163,8 @@ const srPortfolio = [
       reset: true,
       origin: "top",
       distance: "80px",
-      delay: 200,
-      duration: 2000
+      delay: 100,
+      duration0: 1000
     }
   },
   {
@@ -174,8 +173,8 @@ const srPortfolio = [
       reset: true,
       origin: "top",
       distance: "80px",
-      delay: 400,
-      duration: 2000
+      delay: 300,
+      duration: 1000
     }
   },
   {
@@ -184,8 +183,8 @@ const srPortfolio = [
       reset: true,
       origin: "top",
       distance: "80px",
-      delay: 200,
-      duration: 2000,
+      delay: 100,
+      duration: 1000,
       interval: 50
     }
   },
@@ -196,7 +195,7 @@ const srPortfolio = [
       origin: "top",
       distance: "80px",
       delay: 400,
-      duration: 2000,
+      duration: 1000,
       interval: 400
     }
   }
@@ -209,8 +208,8 @@ const srAboutMe = [
       reset: true,
       origin: "top",
       distance: "80px",
-      delay: 200,
-      duration: 2000
+      delay: 100,
+      duration: 1000
     }
   },
   {
@@ -219,8 +218,8 @@ const srAboutMe = [
       reset: true,
       origin: "top",
       distance: "80px",
-      delay: 500,
-      duration: 2000
+      delay: 400,
+      duration: 1000
     }
   }
 ];
@@ -231,8 +230,8 @@ const srQuote = [
       reset: true,
       origin: "top",
       distance: "80px",
-      delay: 200,
-      duration: 2000
+      delay: 100,
+      duration: 1000
     }
   }
 ];
