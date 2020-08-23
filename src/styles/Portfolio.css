@@ -68,3 +68,25 @@
     margin: 0px 30px 40px;
   }
 }
+
+/* Animation */
+
+.Portfolio .project .description .technologies div:hover {
+  animation: technologies 0.2s ease-in-out 3;
+}
+
+@keyframes technologies {
+  0% {
+    transform: translateX(0px);
+  }
+  25% {
+    transform: translateX(-5px);
+  }
+
+  75% {
+    transform: translateX(5px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}

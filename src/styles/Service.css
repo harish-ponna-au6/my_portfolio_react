@@ -39,3 +39,24 @@
 .Service .cards .card .content {
   text-align: justify;
 }
+
+/* Animations */
+
+.Service .cards .card .icon i:hover {
+  animation: service_icon 0.4s ease-in-out 3;
+}
+@keyframes service_icon {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(10deg);
+  }
+
+  75% {
+    transform: rotate(-10deg);
+  }
+  100% {
+    transform: rotate(-0deg);
+  }
+}

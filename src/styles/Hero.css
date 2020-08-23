@@ -35,8 +35,27 @@
   margin: 10px;
   font-size: 40px;
   color: #4bb7e0;
-  transition-duration: 400ms;
+  transition-duration: 300ms;
 }
+
+/* Animations */
+
 .Hero .social_media i:hover {
+  animation: skill_all_icon_i 0.4s ease-in-out;
   transform: scale(1.2) !important;
+}
+@keyframes skill_all_icon_i {
+  0% {
+    transform: scale(1);
+  }
+  25% {
+    transform: scale(1.2);
+  }
+
+  75% {
+    transform: scale(0.7);
+  }
+  100% {
+    transform: scale(1.2);
+  }
 }

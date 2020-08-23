@@ -32,11 +32,7 @@
     rgba(255, 255, 255, 0.25)
   );
   border-radius: 5px;
-  transition-duration: 400ms;
-}
-
-.Skills .all_icons i:hover {
-  transform: scale(0.8) !important;
+  transition-duration: 300ms;
 }
 
 .Skills h2 {
@@ -93,5 +89,65 @@
 @media only screen and (max-width: 800px) {
   .Skills h2 {
     margin-top: 150px;
+  }
+}
+
+/* Animations */
+
+.Skills .all_icons i:hover {
+  animation: skill_all_icon_i 0.4s ease-in-out;
+}
+@keyframes skill_all_icon_i {
+  0% {
+    transform: scale(1);
+  }
+  25% {
+    transform: scale(1.2);
+  }
+
+  75% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0.8);
+  }
+}
+
+.Skills .cards .card i:hover {
+  animation: skill_card_i 0.4s ease-in-out 3;
+}
+
+@keyframes skill_card_i {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(10deg);
+  }
+
+  75% {
+    transform: rotate(-10deg);
+  }
+  100% {
+    transform: rotate(-0deg);
+  }
+}
+.Skills .cards .card .skill_list div:hover {
+  animation: skill_list_div 0.2s ease-in-out 3;
+}
+
+@keyframes skill_list_div {
+  0% {
+    transform: translateX(0px);
+  }
+  25% {
+    transform: translateX(-5px);
+  }
+
+  75% {
+    transform: translateX(5px);
+  }
+  100% {
+    transform: translateX(0px);
   }
 }
