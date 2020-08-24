@@ -4,14 +4,16 @@ const portfolioState = {
       imagePath: "/images/project_images/simplify.png",
       heading: "Simplify",
       content:
-        "Simplify is a web application which helps to digitalize their daily routine billing from paper to computer with paymetn gateway on signup, OTP Confirmation through email for resetting password. The main goal of this application is to help users to analyse/track their monthly business, received orders, income etc.",
+        "Simplify is a React web application. This app is helpful in digitalizing photographers and editors  routine billing from paper to computer. Razorpay payment gateway is used on signup.  OTP Confirmation through email for resetting password. The main goal of this application is to help users to analyse/track their monthly business, received orders, income etc.",
       technologies: [
 	"ReactJS",
 	"Redux",
 	"React-Query",
+	"React-Router-Dom",
 	"Framer-Motion",
         "NodeJS",
         "ExpressJS",
+	"Razorpay",
         "BcryptJs",
 	"JWT",
 	"Nodemailer",
@@ -31,10 +33,10 @@ const portfolioState = {
         "CSS3",
         "Bootstrap4",
         "JavaScript",
-        "NodeJs",
-        "ExpressJs",
+        "NodeJS",
+        "ExpressJS",
         "MongoDB",
-        "BcryptJs",
+        "BcryptJS",
         "Json Web Token",
         "Cloudinary"
       ],
@@ -47,12 +49,12 @@ const portfolioState = {
       content:
         "Sticky-Notebook is a server side rendering web application. It is similar to a todo app but it gives the real look of sticky papers, where users find pleasure to watch the colors for every refresh of the page. It is built on NodeJs with ExpessJs framework. HBS is used to build templates and send it to clients. BcryptJs was used for hashing the passwords and express-sessions for authorization of the user. MongoDb is used for the cloud storage of the user data. It is made responsive with all screen resolutions.",
       technologies: [
-        "NodeJs",
-        "ExpressJs",
+        "NodeJS",
+        "ExpressJS",
         "Express-Sessions",
         "HBS",
         "Mongoose",
-        "BcryptJs",
+        "BcryptJS",
         "Json Web Token",
         "Cloudinary"
       ],
@@ -65,7 +67,7 @@ const portfolioState = {
       content:
         "gity-finder is a deceptively simple web application which searches GitHub for user profiles and returns them in a responsive grid. What makes this app stand out from similar web developer portfolio projects is the sharp attention to detail and 100% from-scratch code incorporating the various modern react technologies. It is made responsive with all screen resolutions.",
       technologies: [
-        "ReactJs",
+        "ReactJS",
         "Redux",
         "CSS3",
         "React-Router-Dom",
@@ -81,12 +83,12 @@ const portfolioState = {
       content:
         "Shopping Cart is also a server side rendering web application. It is similar to the other shopping websites where a user can search for products and filter by categories, can add an item to cart and proceed for checkout. It is built on NodeJs with ExpessJs framework. HBS is used to build templates and send it to clients. BcryptJs was used for hashing the passwords and express-sessions for authorization of the user. MongoDb is used for the cloud storage of the user data.It is made responsive with all screen resolutions.",
       technologies: [
-        "NodeJs",
-        "ExpressJs",
+        "NodeJS",
+        "ExpressJS",
         "Express-Sessions",
         "HBS",
         "Mongoose",
-        "BcryptJs"
+        "BcryptJS"
       ],
       viewSite: "https://shoe-shopping-cart.herokuapp.com/",
       viewCode: "https://github.com/harish-ponna-au6/shoe-shopping"
