@@ -1,6 +1,27 @@
 const portfolioState = {
   projects: [
     {
+      imagePath: "/images/project_images/simplify.png",
+      heading: "Simplify",
+      content:
+        "Simplify is a web application which helps to digitalize their daily routine billing from paper to computer with paymetn gateway on signup, OTP Confirmation through email for resetting password. The main goal of this application is to help users to analyse/track their monthly business, received orders, income etc.",
+      technologies: [
+	"ReactJS",
+	"Redux",
+	"React-Query",
+	"Framer-Motion",
+        "NodeJS",
+        "ExpressJS",
+        "BcryptJs",
+	"JWT",
+	"Nodemailer",
+        "MongoDB"
+        
+      ],
+      viewSite: "https://simplify-2021.herokuapp.com/",
+      viewCode: "https://github.com/harish-ponna-au6/project_simplify"
+    },
+    {
       imagePath: "/images/project_images/job_portal.png",
       heading: "Job Portal",
       content:
@@ -69,24 +90,6 @@ const portfolioState = {
       ],
       viewSite: "https://shoe-shopping-cart.herokuapp.com/",
       viewCode: "https://github.com/harish-ponna-au6/shoe-shopping"
-    },
-    {
-      imagePath: "/images/project_images/url_shortener.png",
-      heading: "Shortener",
-      content:
-        "Shortener is a server side rendering web application. It is similar to a tinyUrl service which is used to shorten the urls. It is built on NodeJs with ExpessJs framework. Shortid is used for shortening the urls. HBS is used to build templates and send it to clients. BcryptJs was used for hashing the passwords and express-sessions for authorization of the user. MongoDb is used for the cloud storage of the user data.It is made responsive with all screen resolutions.",
-      technologies: [
-        "NodeJs",
-        "ExpressJs",
-        "Express-Sessions",
-        "Shortid",
-        "Valid-Url",
-        "HBS",
-        "Mongoose",
-        "BcryptJs"
-      ],
-      viewSite: "https://shorten-your-url.herokuapp.com/",
-      viewCode: "https://github.com/harish-ponna-au6/URL-Shortener"
     },
 
     {
