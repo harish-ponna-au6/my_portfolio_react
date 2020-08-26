@@ -8,7 +8,7 @@ const heroState = {
       classname: "fas fa-envelope"
     },
     {
-      to: "linkedin.com/in/harish-ponna-b9b885ba/",
+      to: "https://www.linkedin.com/in/harish-ponna-b9b885ba/",
       classname: "fab fa-linkedin"
     },
     {
