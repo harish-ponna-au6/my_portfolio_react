@@ -128,7 +128,7 @@ const Navbar = (props) => {
           <li>
             <Link
               onClick={() => {
-                window.open("/resume/HarishPonnaResume.pdf");
+                window.open("/resume/HarishPonnaResumeUpdated.pdf");
               }}
               to="/"
               className="download-resume"
