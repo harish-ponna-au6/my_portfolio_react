@@ -1,27 +1,56 @@
 const portfolioState = {
   projects: [
     {
+      imagePath: "/images/project_images/networkzen.png",
+      heading: "NetworkZen",
+      content:
+        "NetworkZen is a React web application. This app is used for checking the security level of the ip addresses and giving solutions and patchups according to the security threats. It has subcription plans to the users. Stripe payment method was implemented in this application.",
+      technologies: [
+        "ReactJS",
+        "Redux",
+        "React-Router-Dom",
+        "NodeJS",
+        "ExpressJS",
+        "Stripe",
+        "BcryptJs",
+        "JWT",
+        "MongoDB",
+      ],
+      viewSite: "#",
+      viewCode: "#",
+    },
+    {
+      imagePath: "/images/project_images/blank.png",
+      heading: "Everest",
+      content:
+        "Everest is a NextJs application developed for the internal usage for the employees of a company to raise claims and book travel requests and several other purposes which are very important for the daily work routine and to upload it the online for future reference. MicroService architecture was used in this project.",
+      technologies: [
+        'NextJS', 'Redux', 'AG-Grid', 'AntD', 'Styled Components', 'NodeJS', 'ExpressJS', 'PSQL', 'Middleware Proxy'
+      ],
+      viewSite: "#",
+      viewCode: "#",
+    },
+    {
       imagePath: "/images/project_images/simplify.png",
       heading: "Simplify",
       content:
         "Simplify is a React web application. This app is helpful in digitalizing photographers and editors  routine billing from paper to computer. Razorpay payment gateway is used on signup.  OTP Confirmation through email for resetting password. The main goal of this application is to help users to analyse/track their monthly business, received orders, income etc.",
       technologies: [
-	"ReactJS",
-	"Redux",
-	"React-Query",
-	"React-Router-Dom",
-	"Framer-Motion",
+        "ReactJS",
+        "Redux",
+        "React-Query",
+        "React-Router-Dom",
+        "Framer-Motion",
         "NodeJS",
         "ExpressJS",
-	"Razorpay",
+        "Razorpay",
         "BcryptJs",
-	"JWT",
-	"Nodemailer",
-        "MongoDB"
-        
+        "JWT",
+        "Nodemailer",
+        "MongoDB",
       ],
       viewSite: "https://simplify-2021.herokuapp.com/",
-      viewCode: "https://github.com/harish-ponna-au6/project_simplify"
+      viewCode: "https://github.com/harish-ponna-au6/project_simplify",
     },
     {
       imagePath: "/images/project_images/job_portal.png",
@@ -38,10 +67,10 @@ const portfolioState = {
         "MongoDB",
         "BcryptJS",
         "Json Web Token",
-        "Cloudinary"
+        "Cloudinary",
       ],
       viewSite: "https://seasonal-jobs.netlify.app/",
-      viewCode: "https://github.com/harish-ponna-au6/Seasonal-Jobs-FrontEnd/"
+      viewCode: "https://github.com/harish-ponna-au6/Seasonal-Jobs-FrontEnd/",
     },
     {
       imagePath: "/images/project_images/sticky_notebook.png",
@@ -56,10 +85,10 @@ const portfolioState = {
         "Mongoose",
         "BcryptJS",
         "Json Web Token",
-        "Cloudinary"
+        "Cloudinary",
       ],
       viewSite: "https://sticky-notebook.herokuapp.com/",
-      viewCode: "https://github.com/harish-ponna-au6/sticky-notebook"
+      viewCode: "https://github.com/harish-ponna-au6/sticky-notebook",
     },
     {
       imagePath: "/images/project_images/gity_finder.png",
@@ -72,10 +101,10 @@ const portfolioState = {
         "CSS3",
         "React-Router-Dom",
         " Redux-Thunk",
-        "Axios"
+        "Axios",
       ],
       viewSite: "https://gity-finder.netlify.app/",
-      viewCode: "https://github.com/harish-ponna-au6/gity-finder/"
+      viewCode: "https://github.com/harish-ponna-au6/gity-finder/",
     },
     {
       imagePath: "/images/project_images/shoezz.png",
@@ -88,10 +117,10 @@ const portfolioState = {
         "Express-Sessions",
         "HBS",
         "Mongoose",
-        "BcryptJS"
+        "BcryptJS",
       ],
       viewSite: "https://shoe-shopping-cart.herokuapp.com/",
-      viewCode: "https://github.com/harish-ponna-au6/shoe-shopping"
+      viewCode: "https://github.com/harish-ponna-au6/shoe-shopping",
     },
 
     {
@@ -101,7 +130,7 @@ const portfolioState = {
         "This is a simple web page built by using HTML5, CSS3 and JavaScript. It is used  for searching countries and their details by continent category or by country names. This app was built during the initial stages of learning JavaScript.",
       technologies: ["HTML5", "CSS3", "JavaScript"],
       viewSite: "https://countries-view.netlify.app/",
-      viewCode: "https://github.com/harish-ponna-au6/netlify-countries/"
+      viewCode: "https://github.com/harish-ponna-au6/netlify-countries/",
     },
 
     {
@@ -112,9 +141,9 @@ const portfolioState = {
       technologies: ["HTML5", "CSS3", "JavaScript"],
       viewSite: "https://currency-converter-01v.netlify.app/",
       viewCode:
-        "https://github.com/harish-ponna-au6/netlify-currency-converter/"
-    }
-  ]
+        "https://github.com/harish-ponna-au6/netlify-currency-converter/",
+    },
+  ],
 };
 
 export { portfolioState };
