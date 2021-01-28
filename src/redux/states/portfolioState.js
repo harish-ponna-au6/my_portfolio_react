@@ -16,7 +16,7 @@ const portfolioState = {
         "JWT",
         "MongoDB",
       ],
-      viewSite: "#",
+      viewSite: "https://www.networkzen.co/",
       viewCode: "#",
     },
     {
